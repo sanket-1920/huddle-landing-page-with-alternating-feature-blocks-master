@@ -1,0 +1,440 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --font-family-1: "Open Sans", sans-serif;
+  --font-family-2: "Poppins", sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: var(--font-family-1);
+}
+
+.headerSection {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url(./images/bg-hero-desktop.svg);
+  padding: 30px 100px;
+}
+.headerSection .logoSection {
+  display: flex;
+  justify-content: space-between;
+}
+.headerSection .logoSection .logo {
+  display: flex;
+  align-items: center;
+  width: 170px;
+}
+.headerSection .logoSection .btn1 {
+  padding: 10px 60px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10.5px -3.5px black;
+  font-size: smaller;
+  font-weight: bold;
+}
+.headerSection .logoSection .btn1:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.headerSection .information {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+.headerSection .information .info {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 35rem;
+}
+.headerSection .information .info .heading {
+  font-size: 45px;
+  font-weight: 550;
+}
+.headerSection .information .info .content {
+  font-size: 18px;
+  color: var(--Grayish-Blue);
+  margin-top: 30px;
+}
+.headerSection .information .info .btn2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 70px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--Pink);
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+.headerSection .information .info .btn2:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.headerSection .information .mainImage {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.section {
+  padding: 80px 100px;
+}
+.section .firstsection {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 7px -4px black;
+  padding: 30px 70px 30px 70px;
+  border-radius: 20px;
+}
+.section .firstsection .firstinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.section .firstsection .firstinfo .theory {
+  margin-top: 20px;
+  color: var(--Grayish-Blue);
+}
+.section .firstsection .firstimage {
+  flex-basis: 50%;
+  max-width: 400px;
+}
+.section .secondsection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 7px -4px black;
+  padding: 30px 70px 30px 70px;
+  border-radius: 20px;
+}
+.section .secondsection .secondimage {
+  flex-basis: 50%;
+  max-width: 400px;
+}
+.section .secondsection .seconndinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.section .secondsection .seconndinfo .theory {
+  margin-top: 20px;
+  color: var(--Grayish-Blue);
+}
+.section .threesection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 7px -4px black;
+  padding: 30px 70px 30px 70px;
+  border-radius: 20px;
+}
+.section .threesection .threeinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.section .threesection .threeinfo .theory {
+  margin-top: 20px;
+  color: var(--Grayish-Blue);
+}
+.section .threesection .threeimage {
+  flex-basis: 50%;
+  max-width: 400px;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .box {
+  width: 700px;
+  box-shadow: 0px 0px 7px -4px black;
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  z-index: 1000;
+  transform: translateY(70%);
+  background-color: white;
+}
+.section2 .box .btn3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 70px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--Pink);
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+.section2 .box .btn3:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footersection {
+  background-color: var(--Very-Dark-Cyan);
+}
+
+.footer {
+  display: flex;
+  padding: 150px 100px 100px 100px;
+  color: rgb(212, 209, 209);
+}
+.footer .personalInfo {
+  flex-basis: 40%;
+}
+.footer .personalInfo .location {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 40px;
+}
+.footer .personalInfo .location .locationimage img {
+  max-width: 100px;
+}
+.footer .personalInfo .number {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+.footer .personalInfo .email {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+.footer .col1 {
+  flex-basis: 20%;
+}
+.footer .col2 {
+  flex-basis: 20%;
+}
+.footer .socialnetwork {
+  flex-basis: 20%;
+}
+.footer .logo2 img {
+  filter: brightness(0) invert(1);
+}
+.footer .col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+}
+.footer .col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+}
+.footer .socialnetwork {
+  display: flex;
+  gap: 18px;
+  margin-top: 80px;
+}
+.footer .socialnetwork .fa-facebook {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 9px 12px;
+  color: white;
+}
+.footer .socialnetwork .fa-facebook:hover {
+  color: var(--Pink);
+  border-color: var(--Pink);
+}
+.footer .socialnetwork .fa-twitter {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+.footer .socialnetwork .fa-twitter:hover {
+  color: var(--Pink);
+  border-color: var(--Pink);
+}
+.footer .socialnetwork .fa-instagram {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+.footer .socialnetwork .fa-instagram:hover {
+  color: var(--Pink);
+  border-color: var(--Pink);
+}
+
+.copyright {
+  color: rgb(212, 209, 209);
+  display: flex;
+  justify-content: end;
+  padding: 0px 100px 20px 0px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .headerSection {
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+  }
+  .heading {
+    font-size: 25px !important;
+  }
+  .logo {
+    width: 130px;
+  }
+  .btn1 {
+    padding: 8px 20px !important;
+    width: 100px;
+  }
+  .information {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .content {
+    margin-top: 30px;
+    font-size: 15px !important;
+  }
+  .btn2 {
+    padding: 15px 50px;
+    margin-inline: auto !important;
+  }
+  .mainImage {
+    margin-top: 30px;
+  }
+  .section {
+    padding: 50px 30px;
+  }
+  .firstsection {
+    padding: 20px 40px !important;
+    flex-direction: column-reverse;
+    gap: 0rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .firstinfo {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .secondsection {
+    padding: 20px 40px !important;
+    flex-direction: column;
+    gap: 0rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .seconndinfo {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .threesection {
+    padding: 20px 40px !important;
+    flex-direction: column-reverse;
+    gap: 0rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .threeinfo {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .heading1 {
+    font-size: 22px;
+  }
+  .theory {
+    font-size: 15px;
+    margin-top: 10px !important;
+  }
+  .box {
+    padding: 30px 20px;
+  }
+  .boxheading {
+    font-size: 15px;
+  }
+  .btn3 {
+    padding: 15px 40px;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 150px 30px 30px 30px;
+  }
+  .col1 {
+    margin-top: 30px !important;
+    display: block !important;
+  }
+  .col2 {
+    display: block !important;
+  }
+  .logo2 img {
+    max-width: 250px;
+  }
+  .socialnetwork {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  .copyright {
+    padding: 0px 0px 20px 0px !important;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
